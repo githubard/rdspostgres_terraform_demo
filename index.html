@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,19 +7,14 @@
   <body>
 
 <h2> creation of postgresql rds database using terrraform </h2>
-
-
 <h3> Files : </h3>
-
 <p>1) providers.tf -> used for provider configurations.</p>
 <p>2) vars.tf -> used to declare variables used in the resource blocks.</p>
 <p>3) terraform.tfvars -> used to define(asiign) values of variables used in the resource blocks.</p>
 <p>4) rds.tf -> main file used to define the resources to be created in the target cloud platform.</p>
 <p>5) outputs.tf -> used to generate the output after apply operation. </p>
-
-
+    
 <h3>Resuources created : </h3>
-
 <p>1) VPC  -> all the resources reside in this vpc.</p>
 <p>2) Subnets -> 2 subnets within the VPC.</p>
 <p>3) Database subnet group -> with 2 subnets created above.</p>
@@ -34,21 +27,14 @@
 <p>9) Database Parameter group </p>
 <p>10) RDS Database </p>
 
-
 <h3>Updated needed : </h3>
-
 <p>1)  master_password = "*********"  in terraform.tfvars </p>
 
-
 <h3> Running through terraform : </h3>
-
    <p> terraform init  - initialise </p>
-
    <p> terraform plan  - check the resources created </p>
-
    <p> terraform apply  - create the resources </p>
-
    <p> terraform destroy - destroy the resources </p>
-
+    
 </body>
 </html>
